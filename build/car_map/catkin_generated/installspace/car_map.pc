@@ -1,0 +1,8 @@
+prefix=/home/chen/zbl/7_11/catkin_car/install
+
+Name: car_map
+Description: Description of car_map
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/chen/zbl/7_11/catkin_car/install/lib 
+Requires: 

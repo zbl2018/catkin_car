@@ -1,0 +1,17 @@
+-I/opt/ros/kinetic/include
+-I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+-I/usr/include
+-I/usr/include/qt4
+-I/usr/include/qt4/QtGui
+-I/usr/include/qt4/QtCore
+-I/home/chen/zbl/7_11/catkin_car/build/car_map
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="car_map"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-D$<$<NOT:$<CONFIG:Debug>>:QT_NO_DEBUG>
+-DQT_GUI_LIB
+-DQT_CORE_LIB
+-DQT_NO_KEYWORDS
+-o
+/home/chen/zbl/7_11/catkin_car/build/car_map/include/car_map/moc_main_window.cxx
+/home/chen/zbl/7_11/catkin_car/src/car_map/include/car_map/main_window.hpp

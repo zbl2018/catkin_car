@@ -1,0 +1,2 @@
+car_map
+-G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/chen/zbl/7_11/catkin_car/devel -DCMAKE_INSTALL_PREFIX=/home/chen/zbl/7_11/catkin_car/install

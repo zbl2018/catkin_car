@@ -1,0 +1,6 @@
+image: /home/intel/Project/data/map/10.pgm
+resolution: 0.050000
+origin: [-28.858170, -60.208643, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
