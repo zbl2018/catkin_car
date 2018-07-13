@@ -1,0 +1,25 @@
+//首先安装带有rqt插件的qt
+sudo add-apt-repository ppa:levi-armstrong/qt-libraries-xenial 
+sudo add-apt-repository ppa:levi-armstrong/ppa 
+sudo apt update && sudo apt install qt57creator 
+sudo apt install qt57creator-plugin-ros
+
+=========通过上面安装成功之后的qt-creator版本太低，下面自定义路劲启动自己安装的qt-creator以及编译库=============
+
+//修改系统默认打开的qt creator版本
+sudo gedit /usr/lib/x86_64-linux-gnu/qt-default/qtchooser/default.conf
+//以下这两句是自己安装的qt creator(community)的安装路径（不要照复制，按照自己的安装路径修改下面两句）
+/opt/qt57/gcc/bin
+/opt/qt57/gcc/lib
+
+//修改自己安装的qt creator(community)的文件内容，让其启动时加载ros环境
+sudo gedit ~/.local/share/applications/DigiaQt-qtcreator-community.desktop
+
+//打开文件后，在Exec=后面加入：bash -i -c (加载ros环境)，如下面例子
+Exec=bash -i -c /home/chen/zbl/qt_install_location/Tools/QtCreator/bin/qtcreator
+
+//安装rqt编译插件
+sudo apt-get install ros-kinetic-qt-ros
+
+//创建rqt项目，在终端输入以下命令
+catkin_create_qt_pkg <项目名称>
